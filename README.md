@@ -27,7 +27,3 @@ Contributeurs:
 * chemou_j
 * eychen_m
 * prou_m
-
-### TODO
-
-Page Wikipédia (challenge)
