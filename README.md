@@ -22,6 +22,11 @@ Voici une liste rassemblant les langages qui font partis de nos connaissances:
 - JavaScript
 Ces connaissances nous ont été utiles pour faire le site que nous voulions.
 
+url: pictwriters.webou.net/humanitycitizen/index.html
+
+Licence: OpenBSD car on ne veut pas qu'il y ait de contraintes pour les
+développeurs
+
 Contributeurs:
 * archer_s
 * chemou_j
