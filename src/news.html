@@ -5,7 +5,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
-	<title>Color Admin | Vector Map</title>
+	<title>Color Admin | Typography</title>
 	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
 	<meta content="" name="description" />
 	<meta content="" name="author" />
@@ -20,10 +20,6 @@
 	<link href="assets/css/style-responsive.min.css" rel="stylesheet" />
 	<link href="assets/css/theme/default.css" rel="stylesheet" id="theme" />
 	<!-- ================== END BASE CSS STYLE ================== -->
-	
-	<!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
-	<link href="assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" />
-	<!-- ================== END PAGE LEVEL STYLE ================== -->
 </head>
 <body>
 	<!-- begin #page-loader -->
@@ -31,7 +27,7 @@
 	<!-- end #page-loader -->
 	
 	<!-- begin #page-container -->
-	<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
+	<div id="page-container" class="fade page-header-fixed page-sidebar-fixed">
 		<!-- begin #header -->
 		<div id="header" class="header navbar navbar-default navbar-fixed-top">
 			<!-- begin container-fluid -->
@@ -182,140 +178,150 @@
 		<!-- end #sidebar -->
 		
 		<!-- begin #content -->
-		<div id="content" class="content content-full-width content-inverse-mode">
+		<div id="content" class="content">
 			<!-- begin breadcrumb -->
 			<ol class="breadcrumb pull-right">
 				<li><a href="javascript:;">Home</a></li>
-				<li><a href="javascript:;">Map</a></li>
-				<li class="active">Vector Map</li>
+				<li><a href="javascript:;">UI Elements</a></li>
+				<li class="active">Typography</li>
 			</ol>
 			<!-- end breadcrumb -->
 			<!-- begin page-header -->
-			<h1 class="page-header">Vector Map <small>header small text goes here...</small></h1>
+			<h1 class="page-header">Typography <small>header small text goes here...</small></h1>
 			<!-- end page-header -->
 			
-			<div class="map">
-                <div id="world-map"></div>
-                <div class="map-float-table width-sm hidden-xs p-15">
-                    <h4 class="m-t-0"><i class="fa fa-map-marker text-danger m-r-5"></i> Vector Map</h4>
-                    <div data-scrollbar="true" class="height-md">
-                        <table class="table table-inverse">
-                            <thead>
-                                <tr>
-                                    <th>Country</th>
-                                    <th>Total Visitors</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Vatican City</td>
-                                    <td><span class="text-success">9,820 <i class="fa fa-arrow-up"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Monaco</td>
-                                    <td>1,920</td>
-                                </tr>
-                                <tr>
-                                    <td>Nauru</td>
-                                    <td><span class="text-danger">1,346 <i class="fa fa-arrow-down"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Tuvalu</td>
-                                    <td><span class="text-success">6,543 <i class="fa fa-arrow-up"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td>San Marino</td>
-                                    <td><span class="text-success">7,321 <i class="fa fa-arrow-up"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Liechtenstein</td>
-                                    <td>3,434</td>
-                                </tr>
-                                <tr>
-                                    <td>Marshall Islands</td>
-                                    <td>1,922</td>
-                                </tr>
-                                <tr>
-                                    <td>Saint Kitts and Nevis</td>
-                                    <td><span class="text-danger">9,812 <i class="fa fa-arrow-down"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Maldives</td>
-                                    <td><span class="text-danger">4,182 <i class="fa fa-arrow-down"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Malta</td>
-                                    <td>9,188</td>
-                                </tr>
-                                <tr>
-                                    <td>Grenada</td>
-                                    <td>11,198</td>
-                                </tr>
-                                <tr>
-                                    <td>Saint Vincent</td>
-                                    <td><span class="text-success">9,101 <i class="fa fa-arrow-up"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Barbados</td>
-                                    <td><span class="text-success">9,192 <i class="fa fa-arrow-up"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Antigua and Barbuda</td>
-                                    <td><span class="text-success">5,282 <i class="fa fa-arrow-up"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Seychelles</td>
-                                    <td><span class="text-success">8,283 <i class="fa fa-arrow-up"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Palau</td>
-                                    <td><span class="text-danger">1,222 <i class="fa fa-arrow-down"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Andorra</td>
-                                    <td>146</td>
-                                </tr>
-                                <tr>
-                                    <td>Saint Lucia</td>
-                                    <td>3,923</td>
-                                </tr>
-                                <tr>
-                                    <td>Federated States</td>
-                                    <td>9,827</td>
-                                </tr>
-                                <tr>
-                                    <td>Singapore</td>
-                                    <td>7,293</td>
-                                </tr>
-                                <tr>
-                                    <td>Kiribati</td>
-                                    <td>9,238</td>
-                                </tr>
-                                <tr>
-                                    <td>Tonga</td>
-                                    <td>6,422</td>
-                                </tr>
-                                <tr>
-                                    <td>Dominica</td>
-                                    <td><span class="text-success">3,341 <i class="fa fa-arrow-up"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Mauritius</td>
-                                    <td><span class="text-success">532 <i class="fa fa-arrow-up"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td>Bahrain</td>
-                                    <td><span class="text-success">8,754 <i class="fa fa-arrow-up"></i></span></td>
-                                </tr>
-                                <tr>
-                                    <td>São Tomé and Príncipe</td>
-                                    <td>5,742</td>
-                                </tr>
-                            </tbody>
-                        </table>
+			<!-- begin row -->
+			<div class="row">
+			    <!-- begin col-6 -->
+			    <div class="col-md-6">
+			        <!-- begin panel -->
+                    <div class="panel panel-inverse">
+                        <div class="panel-heading">
+                            <div class="panel-heading-btn">
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                            </div>
+                            <h4 class="panel-title">Fièvre Ebola</h4>
+                        </div>
+                        <div class="panel-body">
+							<p>Cette maladie persiste en Afrique de l'Ouest et les équipes médicales doivent jouer deux rôles majeurs dans la résolution de ce problème. Le premier étant, bien évidemment, de soigner les personnes atteintes par cette fièvre. Le second est de réduire au maximum l'accroissement du nombre de malades.
+De plus, les médecins doivent diagnostiquer la maladie. Malheureusement il est difficile de réaliser cette tâche. En effet, un examen simple du patient ne permet pas de déduire s'il est atteint par cette maladie. Pour cela, il doit être transferré dans un centre de référence. </p>
+                        </div>
                     </div>
-                </div>
-            </div>
+                    <!-- end panel -->
+			        <!-- begin panel -->
+                    <div class="panel panel-inverse">
+                        <div class="panel-heading">
+                            <div class="panel-heading-btn">
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                            </div>
+                            <h4 class="panel-title">Education des enfants dans un environnement de violence</h4>
+                        </div>
+                        <div class="panel-body">
+							<p>De nombreuses écoles ont été fermées à cause des perturbations en République centrafricaine. Ainsi, de nombreux enfants ne peuvent plus poursuivre leur éducation scolaire.
+La présence incéssante de violence perturbe d'autant plus les enfants. Le plus grand désir des habitants est la paix. </p>
+                        </div>
+                    </div>
+                    <!-- end panel -->
+			        
+			        
+			    </div>
+			    <!-- end col-6 -->
+			    <!-- begin col-6 -->
+			    <div class="col-md-6">
+			        <!-- begin panel -->
+                    <div class="panel panel-inverse">
+                        <div class="panel-heading">
+                            <div class="panel-heading-btn">
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                            </div>
+                            <h4 class="panel-title">Pourquoi faire un don?</h4>
+                        </div>
+                        <div class="panel-body">
+							<p> Faire un don signifie donner. Donner ce que d'autre n'ont pas ou plus.
+Par exemple, l'eau est essentiel pour vivre et pour exister.
+Vos dons permettront donc de procurer de l'eau à ces personnes dans le besoin.
+Imaginez-vous sans eau, vous avez soif. Ne voudriez-vous pas une goutte d'eau venue de nulle part?
+Faites des dons pour que les médecins puissent vacciner les personnes dans les pays en développement.
+Vous avez des vêtements démodés ou que vous ne porterez plus? Donnez les à ceux qui n'en ont pas ou en ont besoin.
+Imaginez-vous dans le froid sans vêtements chaud. L'aide d'une personne tiers vous serait bien agréable.
+</p>
+                        </div>
+                    </div>
+                    <!-- end panel -->
+			        <!-- begin panel -->
+                    <div class="panel panel-inverse">
+                        <div class="panel-heading">
+                            <div class="panel-heading-btn">
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                            </div>
+                            <h4 class="panel-title">Médicaments / vaccins</h4>
+                        </div>
+                        <div class="panel-body">
+							<p>Vos dons d'argent nous permettrons d'acheter des médicaments et des vaccins. Ces derniers pourront être utilisés par des médecins bénévoles.</p>
+                        </div>
+                    </div>
+                    <!-- end panel -->
+			        <!-- begin panel -->
+                    <div class="panel panel-inverse">
+                        <div class="panel-heading">
+                            <div class="panel-heading-btn">
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                            </div>
+                            <h4 class="panel-title">Dons matériels</h4>
+                        </div>
+                        <div class="panel-body">
+							<ul>
+								<li> Fournitures scolaires
+Le don de fournitures scolaires permettent à de nombreux enfants de pouvoir recevoir des cours dans de bonnes conditions. Ainsi, n'hésitez plus à donner si vous avez de veilles fournitures scolaires cachées dans un coin de votre armoire. Elles trouveront une plus grande utilitée dans les mains des enfants qui souhaitent très fortement aller en cours et apprendre.</li>
+								<li> Vêtements
+Le don de vêtements permet aux habitants les plus pauvres de pouvoir changer d'habits plus régulièrement et donc d'être mieux intégré dans la société.</li>
+							</ul>
+                        </div>
+                    </div>
+                    <!-- end panel -->
+			        <!-- begin panel -->
+                    <div class="panel panel-inverse">
+                        <div class="panel-heading">
+                            <div class="panel-heading-btn">
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-repeat"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                                <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                            </div>
+                            <h4 class="panel-title">Autres Dons</h4>
+                        </div>
+                        <div class="panel-body">
+							<ol>
+								<li> Don d'Argent
+Vos dons d'argent nous permettent d'acheter de la nourriture pour les habitants des pays en développement. </li>
+								<li> Don de Temps
+Le don de votre temps a un très grand impacte dans le développment des pays.
+Il existe différent type de dons de temps:
+Des donateurs peuvent donner des cours scolaires gratuitement aux habitants.
+Vous pouvez également donner des cours sur votre activité professionnelle (tel que l'artisanat). </li>
+							</ol>
+                        </div>
+                    </div>
+                    <!-- end panel -->
+			    </div>
+			    <!-- end col-6 -->
+			</div>
+			<!-- end row -->
 		</div>
 		<!-- end #content -->
 		
@@ -393,15 +399,11 @@
 	<!-- ================== END BASE JS ================== -->
 	
 	<!-- ================== BEGIN PAGE LEVEL JS ================== -->
-	<script src="assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
-	<script src="assets/plugins/jquery-jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-	<script src="assets/js/map-vector.demo.min.js"></script>
 	<script src="assets/js/apps.min.js"></script>
 	<!-- ================== END PAGE LEVEL JS ================== -->
 	<script>
 		$(document).ready(function() {
 			App.init();
-			MapVector.init();
 		});
 	</script>
 </body>
